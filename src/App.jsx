@@ -13,6 +13,7 @@ import ClientLayout from './layouts/ClientLayout';
 import ClientDashboard from './pages/client/Dashboard';
 import OrderN8n from './pages/OrderN8n';
 import Invoice from './pages/Invoice';
+import PreviewCarbonFootprint from './pages/PreviewCarbonFootprint';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
 
             <Route path="/order/n8n-cloud" element={<OrderN8n />} />
             <Route path="/invoice/:id" element={<Invoice />} />
+            <Route path="/preview/carbon-footprint" element={<PreviewCarbonFootprint />} />
 
             {/* Admin Routes */}
             <Route path="/admin/login" element={<Login />} />

@@ -8,9 +8,14 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start-proxy": "node proxy-server/index.cjs"
+    "start-proxy": "node proxy-server/index.cjs",
+    "remotion": "remotion studio remotion/index.js",
+    "remotion:render": "remotion render remotion/index.js CarbonFootprint out/carbon-footprint.mp4"
   },
   "dependencies": {
+    "@remotion/bundler": "^4.0.446",
+    "@remotion/cli": "^4.0.446",
+    "@remotion/player": "^4.0.454",
     "@supabase/supabase-js": "^2.90.1",
     "body-parser": "^2.2.2",
     "clsx": "^2.1.1",
@@ -22,6 +27,7 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.12.0",
+    "remotion": "^4.0.446",
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
